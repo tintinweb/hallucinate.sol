@@ -5,6 +5,7 @@
 
 
 # Hallucinate.sol
+<sub><b>ℹ️ This is a PoC for HackWek! - a Diligence internal 5-day Hackathon. The idea was to have fun learning about RNN's, text prediction, and connect this to solidity smart contracts 🙌.</b></sub>
 
 😵‍💫 A Recurrent Neural Network (RNN) hallucinating solidity source code.
 
@@ -15,6 +16,10 @@
 
 **Note**: train the model on https://colab.research.google.com/ as it is much faster than doing this locally.
 
+## Playground
+
+👉 TBD
+
 ## Contents
 
 
@@ -24,9 +29,19 @@
 | [Tutorial 2: load & hallucinate](./tutorial_2_hallucinate_from_pretrained_model.ipynb)    | loads the pre-trained model from [./solidity_model_text/](./solidity_model_text/) and hallucinates more solidity. |
 | [Tutorial 1: train & hallucinate](./tutorial_1_train_and_hallucinate_save_restore_continue_training.ipynb)        | is the code that downloads samples from https://github.com/tintinweb/smart-contract-sanctuary, creates the model, trains it, hallucinates some text, and then continues to show how to save/restore/re-train the model. |
 
-**Note**: The model can be exported for use with [tensorflow.js](https://www.tensorflow.org/js) so that it can be used with any javascript/web-front/backend. See [Tutorial 1](./tutorial_1_train_and_hallucinate_save_restore_continue_training.ipynb) for how to do this.
+* **Note**: The model can be exported for use with [tensorflow.js](https://www.tensorflow.org/js) so that it can be used with any javascript/web-front/backend. See [Tutorial 1](./tutorial_1_train_and_hallucinate_save_restore_continue_training.ipynb) for how to do this.
+* **Note**: The model can also be used for non-solidity code. Just make sure to write your own `SolidityTrainer` class 🙌.
 
-## Demo
+
+## Improvements
+
+Of course, there's no way to explore everything in this 5-day HackWek period, but, here're a couple of thoughts on what to improve:
+
+* vocabulary should be based on tokentype_text instead of chars. E.g. use `pygments` to lex `solidity` and map this as the vocabulary. This should give way higher quality output and allows the model to learn the source structure more efficiently.
+* input cleanup should reliably remove all comments/pragmas/etc.
+* loss function should reinforce training towards fuzzy-parseable code
+
+## Example
 
 Copy the two tutorials to your google drive and run them.
 

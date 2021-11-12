@@ -1,6 +1,6 @@
 # Hallucinate.sol
 
-A RNN dreaming solidity source code.
+An RNN dreaming solidity source code.
 
 
 ## Demo

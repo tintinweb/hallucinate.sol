@@ -5,7 +5,7 @@
 
 
 # Hallucinate.sol
-<sub><b>ℹ️ This is a PoC for HackWek! - a Diligence internal 5-day Hackathon. The idea was to have fun learning about RNN's, text prediction, and connect this to solidity smart contracts 🙌.</b></sub>
+<sub><b>ℹ️ This is a PoC for HackWek! - a Diligence internal 5-day Hackathon. My plan was to have fun learning about tensorflow, RNN's, text-prediction, and connect this to solidity smart contracts 🙌.</b></sub>
 
 😵‍💫 A Recurrent Neural Network (RNN) hallucinating solidity source code.
 

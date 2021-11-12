@@ -57,8 +57,10 @@ def nextFile():
 
 
 class TrainingData(object):
-    def __init__(self, text):
+    def __init__(self, text=None):
         self.text = text
+        if not self.text or len(self.text)==0:
+            return # dummy object, can only load existing predictionmodel
         self.len = len(text)
 
         self.vocab = sorted(set(self.text))
@@ -120,7 +122,7 @@ class TrainingData(object):
         self.predictionModel = OneStep(self.model, self.chars_from_ids, self.ids_from_chars)
 
     def predict(self, inputs=['contract ', 'contract ', 'abstract ', 'interface ', 'library '], targetLen=3000):
-        assert(self.model and self.predictionModel)
+        assert(self.predictionModel)
         
         states = None
         next_char = tf.constant(inputs)

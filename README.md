@@ -17,9 +17,14 @@
 
 **Note**: train the model on https://colab.research.google.com/ as it is much faster than doing this locally.
 
-## Playground
+## Interactive Playground
 
-👉 TBD
+Copy the python notebook to your own collab/google drive and runit.
+
+<sub>Hint: Google Collab → Runtime → Change Runtime Type: GPU</sub>
+
+* 👉 [Tutorial 2 - load & hallucinate](https://drive.google.com/file/d/16vQX3SVxmqmkXfwWut38YPfcrRq4SlAE/view?usp=sharing)
+* 👉 [Tutorial 1 - train & hallucinate](https://drive.google.com/file/d/13Z6Ak7UCUf6sMvCujeym2A6Bio8mTv66/view?usp=sharing)
 
 ## Contents
 

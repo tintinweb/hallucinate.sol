@@ -11,6 +11,9 @@
 * We train our model on samples from the https://github.com/tintinweb/smart-contract-sanctuary
 * And then "hallucinate" new contracts
 
+![image](https://user-images.githubusercontent.com/2865694/141459177-49d9d800-6da5-4736-b7f5-761546532160.png)
+
+**Note**: train the model on https://colab.research.google.com/ as it is much faster than doing this locally.
 
 ## Contents
 

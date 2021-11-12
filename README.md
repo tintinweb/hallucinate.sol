@@ -17,17 +17,24 @@
 
 ## Contents
 
-* `./solidity_model_text/` - contains a pre-trained keras model trained on 15mb solidity input, character based training (pretty dumb), with sampling sequence length of 250 chars. The model has an `embedding_dimension` of `256` with `1024` `rnn_units`. It was trained for `15 epochs` on google collab (hw-accelleration: `GPU`) which took somewhere  between 1-1.5 hrs.
-* [./tutorial_2_hallucinate_from_pretrained_model.ipynb](./tutorial_2_hallucinate_from_pretrained_model.ipynb) - loads the pre-trained model from `./solidity_model_text` to hallucinate more solidity.
-* [./tutorial_1_train_and_hallucinate_save_restore_continue_training.ipynb](./tutorial_1_train_and_hallucinate_save_restore_continue_training.ipynb) - is the code that downloads samples from https://github.com/tintinweb/smart-contract-sanctuary, creates the model, trains it, hallucinates some text, and then continues to show how to save/restore/re-train the model. Ultimately, the model is exported and converted to [tensorflow.js](https://www.tensorflow.org/js) conform format so that it can be used with any javascript/web-front/backend.
+
+| Folder       | Description   |
+| ------------ | ------------- |
+| [solidity_model_text](./solidity_model_text/)    | contains a pre-trained model trained on 15mb solidity input, naive character based training, with sampling sequence length of 250 chars. The model has an `embedding_dimension` of `256` with `1024` `rnn_units`. It was trained for `15 epochs` on google collab (hw-accelleration: `GPU`) which took somewhere between 1-1.5 hrs. |
+| [Tutorial 2: load & hallucinate](./tutorial_2_hallucinate_from_pretrained_model.ipynb)    | loads the pre-trained model from [./solidity_model_text/](./solidity_model_text/) and hallucinates more solidity. |
+| [Tutorial 1: train & hallucinate](./tutorial_1_train_and_hallucinate_save_restore_continue_training.ipynb)        | is the code that downloads samples from https://github.com/tintinweb/smart-contract-sanctuary, creates the model, trains it, hallucinates some text, and then continues to show how to save/restore/re-train the model. Ultimately, the model is exported and converted to [tensorflow.js](https://www.tensorflow.org/js) conform format so that it can be used with any javascript/web-front/backend. |
 
 ## Demo
 
 Copy the two tutorials to your google drive and run them.
 
+**Input:**
+
 ```python
-print(trainingData.predict(['contract '], 3000))
+>>> print(trainingData.predict(['contract '], 3000))
 ```
+
+**Output:**
 
 ```solidity
 contract Ownable {

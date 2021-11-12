@@ -47,7 +47,8 @@ Of course, there's no way to explore everything in this 5-day HackWek period, bu
 * input cleanup should reliably remove all comments/pragmas/etc.
 * loss function should reinforce training towards fuzzy-parseable code
 * shuffle before downloading contract sources
-* continuous learning. re-train with more sources (not only 15mb :D)
+* continuous learning. re-train with more sources (not only 15mb 😂)
+* the pre-trained `solidity_model_text` is pretty shitty an will generate a lot of garbage. Obviously, 15 epochs is not enough and the text based shuffling approach makes no sense. But at least it is generating something 😂
 
 ## Example
 

@@ -3,14 +3,15 @@
 [[  🌐  ](https://diligence.consensys.net)  [  📩  ](https://github.com/ConsenSys/vscode-solidity-doppelganger/blob/master/mailto:diligence@consensys.net)  [  🔥  ](https://consensys.github.io/diligence/)]
 </sup><br/><br/>
 
+<sub><b>This is a PoC for HackWek! - a Diligence internal 5-day Hackathon 🥷⚔️.<br>TLDR;</b> My plan was to have fun with tensorflow, RNN's, text-prediction, and connect this to solidity smart contracts 🙌. This is an excerpt of my journey.</sub>
 
 # Hallucinate.sol
-<sub><b>ℹ️ This is a PoC for HackWek! - a Diligence internal 5-day Hackathon. My plan was to have fun learning about tensorflow, RNN's, text-prediction, and connect this to solidity smart contracts 🙌.</b></sub>
 
 😵‍💫 A Recurrent Neural Network (RNN) hallucinating solidity source code.
 
 * We train our model on samples from the https://github.com/tintinweb/smart-contract-sanctuary
 * And then "hallucinate" new contracts
+
 
 ![image](https://user-images.githubusercontent.com/2865694/141459177-49d9d800-6da5-4736-b7f5-761546532160.png)
 

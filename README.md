@@ -46,6 +46,8 @@ Of course, there's no way to explore everything in this 5-day HackWek period, bu
 * vocabulary should be based on tokentype_text instead of chars. E.g. use `pygments` to lex `solidity` and map this as the vocabulary. This should give way higher quality output and allows the model to learn the source structure more efficiently.
 * input cleanup should reliably remove all comments/pragmas/etc.
 * loss function should reinforce training towards fuzzy-parseable code
+* shuffle before downloading contract sources
+* continuous learning. re-train with more sources (not only 15mb :D)
 
 ## Example
 
